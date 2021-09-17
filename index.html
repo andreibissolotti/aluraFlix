@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraFlix</title>
+</head>
+<body>
+    <header>
+        <a href="https://alura.com.br/" target="_blank">
+          <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+      </header>
+      
+      <div id="seletor" class="seletor">
+        <label for="seletor"> Selecione a lista desejada:</label><br>
+        <select id="select" name="seletor" onchange="mostrarLista()">
+          <option value="">Selecione</option>
+          <option value="filmes">Filmes</option>
+          <option value="series">Séries</option>
+          <option value="jogos">Jogos</option>
+        </select>
+      </div>
+      <div class="container">
+        <h1 id="title" class="off page-title"></h1>
+      </div>
+      <div id="imagens" class="imagens"></div>
+      <div id="cadastro" class="container-cad off">
+        <h1 id="cadastroTitle"></h1>
+        <br>
+        <div class="cadIn">
+          <label id="nameInLab" for="nameIn"></label>
+          <input name="nameIn" id="cadastroName" type="text" onchange="check()">
+        </div>
+        <div class="cadIn">
+          <label for="imgIn">Link do poster:</label>
+          <input name="imgIn" id="cadastroImg" type="text">
+        </div>
+        <div class="cadIn">
+          <label id="linkInLab" for="linkIn"></label>
+          <input name="linkIn" id="cadastroLink" type="text">
+        </div>
+        <br>
+        <p id="jaCad"></p>
+        <button id="botaoCad" onclick="cadastrar()">Cadastrar</button>
+      </div>
+      
+      <div id="rodape" class="rodape off">
+        <button onclick="trocarLista()">Trocar lista</button>
+        <button onclick="abrirCadastro()">Cadastrar novo</button>
+      </div>
+      
+      <footer class="rodape">
+        <a href="https://github.com/andreibissolotti" target="blank">
+          <img src="https://i.imgur.com/SSvQAZy.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/andrei-rafael-bissolotti-dos-santos-41b8a018a/" target="blank">
+          <img src="https://i.imgur.com/fgV9mOt.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:andreibisso@gmail.com">
+          <img src="https://i.imgur.com/rUO94ml.png" alt="E-mail">
+        </a>
+      
+      </footer>
+</body>
+</html>
