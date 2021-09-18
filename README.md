@@ -9,5 +9,6 @@
 - [x] Lista de Jogos
 - [x] Possibilidade de adicionar itens em cada categoria
 - [x] Acessa informações do item ao clicar no poster
+- [x] Opção para remover qualquer item
 
 

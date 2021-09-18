@@ -1,87 +1,157 @@
 body {
-    font-family: "Roboto Mono", monospace;
-    text-align: center;
-    background-image: url("");
-    background-color: #000000;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-  }
-  
-  header {
-    padding: 2rem;
-  }
-  
-  .seletor {
-    margin: 0 auto;
-    padding: 10rem;
-    color: white;
-  }
-  
-  .container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .container-cad {
-    margin: 0 auto;
-    padding: 20px;
-    color: #ffffff;
-    border: 3px solid;
-    border-radius: 20px;
-    border-bottom-color: #ba0000;
-    border-right-color: #ba0000;
-    border-top-color: #670000;
-    border-left-color: #670000;
-    max-width: 500px;
-    background-color: rgba(0,0,0,0.75);
-  }
-  
-  .cadIn {
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
-  }
-  
-  .page-title {
-    color: #ffffff;
-    margin: 0 0 5px;
-  }
-  
-  .page-subtitle {
-    color: #ffffff;
-    margin-top: 5px;
-  }
-  
-  .page-logo {
-    width: 7rem;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  
-  .alura-logo {
-    width: 3rem;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
-  
-  .rodape {
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
-    padding: 2rem;
-  }
-  
-  .off {
-    display: none;
-  }
-  
-  .imagens > a {
-    margin: 0 10px;
-  }
-  
-  img {
-    max-height: 250px;
-  }
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding: 2rem;
+}
+
+button {
+  margin-top: 2rem;
+  border-radius: 10px;
+  width: 20%;
+  max-width: 200px;
+  border: 2px solid red;
+  font-size: 1.2rem;
+}
+
+button:hover{
+  border: 2px dashed red;
+}
+
+.seletor {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  color: white;
+  text-align: center;
+}
+
+.seletorLabel {
+  font-size: 20px;
+}
+
+.seletorInp {
+  border-radius: 5px;
+  width: 20%;
+  height: 25px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.seletorInp:hover{
+  border: 2px solid #5759ff;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.container-mod {
+  margin: 0 auto;
+  padding: 20px;
+  color: #ffffff;
+  border: 3px solid;
+  border-radius: 20px;
+  border-bottom-color: #ba0000;
+  border-right-color: #ba0000;
+  border-top-color: #670000;
+  border-left-color: #670000;
+  max-width: 500px;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.listRem {
+  border: 1.5px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 75%;
+}
+
+.checbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.subTitle {
+  margin: 0.5rem;
+}
+
+.cadIn {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-top: 1rem;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.inputText {
+  border-radius: 5px;
+  max-height: 13px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 7rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.alura-logo {
+  width: 3rem;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.rodape {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.off {
+  display: none;
+}
+
+.imagens > a {
+  margin: 0 10px;
+}
+
+.imagens img {
+  max-height: 25rem;
+  border: 2px solid rgb(197, 3, 3);
+  margin-top: 10px;
+}
+
+.imagens img:hover {
+  max-height: 30rem;
+  border-radius: 10px;
+  border-width: 4px;
+}

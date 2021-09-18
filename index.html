@@ -8,63 +8,72 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="https://alura.com.br/" target="_blank">
-          <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-        </a>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-      </header>
-      
-      <div id="seletor" class="seletor">
-        <label for="seletor"> Selecione a lista desejada:</label><br>
-        <select id="select" name="seletor" onchange="mostrarLista()">
-          <option value="">Selecione</option>
-          <option value="filmes">Filmes</option>
-          <option value="series">Séries</option>
-          <option value="jogos">Jogos</option>
-        </select>
-      </div>
-      <div class="container">
-        <h1 id="title" class="off page-title"></h1>
-      </div>
-      <div id="imagens" class="imagens"></div>
-      <div id="cadastro" class="container-cad off">
-        <h1 id="cadastroTitle"></h1>
-        <br>
-        <div class="cadIn">
-          <label id="nameInLab" for="nameIn"></label>
-          <input name="nameIn" id="cadastroName" type="text" onchange="check()">
-        </div>
-        <div class="cadIn">
-          <label for="imgIn">Link do poster:</label>
-          <input name="imgIn" id="cadastroImg" type="text">
-        </div>
-        <div class="cadIn">
-          <label id="linkInLab" for="linkIn"></label>
-          <input name="linkIn" id="cadastroLink" type="text">
-        </div>
-        <br>
-        <p id="jaCad"></p>
-        <button id="botaoCad" onclick="cadastrar()">Cadastrar</button>
-      </div>
-      
-      <div id="rodape" class="rodape off">
-        <button onclick="trocarLista()">Trocar lista</button>
-        <button onclick="abrirCadastro()">Cadastrar novo</button>
-      </div>
-      
-      <footer class="rodape">
-        <a href="https://github.com/andreibissolotti" target="blank">
-          <img src="./src/GitHub-Mark-Light-32px.png" alt="https://i.imgur.com/SSvQAZy.png">
-        </a>
-        <a href="https://www.linkedin.com/in/andrei-rafael-bissolotti-dos-santos-41b8a018a/" target="blank">
-          <img src="./src/linkedin_black.png" alt="https://i.imgur.com/fgV9mOt.png">
-        </a>
-        <a href="mailto:andreibisso@gmail.com">
-          <img src="./src/email.png" alt="https://i.imgur.com/rUO94ml.png">
-        </a>
-      
-      </footer>
+  <header>
+    <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+  </header>
+  
+  <div id="seletor" class="seletor">
+    <label for="select" class="seletorLabel">Selecione a lista desejada:</label><br>
+    <select id="select" class="seletorInp" onchange="mostrarLista()">
+      <option value="">Selecione</option>
+      <option value="filmes">Filmes</option>
+      <option value="series">Séries</option>
+      <option value="jogos">Jogos</option>
+    </select>
+  </div>
+  <div class="container">
+    <h1 id="title" class="off page-title"></h1>
+  </div>
+  <div id="imagens" class="imagens"></div>
+  <div id="cadastro" class="container-mod off">
+    <h1 id="cadastroTitle"></h1>
+    <br>
+    <div class="cadIn">
+      <label id="nameInLab" for="cadastroName"></label>
+      <input id="cadastroName" type="text" class="inputText" onchange="checkNome()">
+    </div>
+    <div class="cadIn">
+      <label for="cadastroImg">Link do poster:</label>
+      <input id="cadastroImg" type="text" class="inputText" onchange="checkImg()">
+    </div>
+    <div class="cadIn">
+      <label id="linkInLab" for="cadastroLink"></label>
+      <input id="cadastroLink" type="text" class="inputText">
+    </div>
+    <br>
+    <p id="cadErro"></p>
+    <button id="botaoCad" onclick="cadastrar()">Cadastrar</button>
+    <button onclick="mostrarLista()">Cancelar</button>
+  </div>
+  <div id="remover" class="container-mod off">
+    <h1 id="removerTitle"></h1>
+    <h6 id="removerSubTitle" class="subTitle"></h6>
+    <div id="listRem" class="listRem"></div>
+    <button id="botaoRem" onclick="removerFun()" class="remBot">Remover!</button>
+    <button onclick="mostrarLista()">Cancelar</button>
+  </div>
+  
+  <div id="rodape" class="rodape off">
+    <button onclick="trocarLista()">Trocar lista</button>
+    <button onclick="abrirCadastro()">Cadastrar novo</button>
+    <button onclick="abrirRem()">Remover item</button>
+  </div>
+  
+  <footer class="rodape">
+    <a href="https://github.com/andreibissolotti" target="blank">
+      <img src="https://i.imgur.com/SSvQAZy.png" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/andrei-rafael-bissolotti-dos-santos-41b8a018a/" target="blank">
+      <img src="https://i.imgur.com/fgV9mOt.png" alt="LinkedIn">
+    </a>
+    <a href="mailto:andreibisso@gmail.com">
+      <img src="https://i.imgur.com/rUO94ml.png" alt="E-mail">
+    </a>
+  
+  </footer>
 
       <script src="./script.js"></script>
 </body>
