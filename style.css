@@ -19,6 +19,7 @@ button {
   max-width: 200px;
   border: 2px solid red;
   font-size: 1.2rem;
+  transition: 0.6s;
 }
 
 button:hover{
@@ -148,6 +149,7 @@ button:hover{
   height: 25rem;
   border: 2px solid rgb(197, 3, 3);
   margin-top: 10px;
+  transition: 0.6s;
 }
 
 .imagens img:hover {
