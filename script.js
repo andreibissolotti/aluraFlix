@@ -53,6 +53,8 @@ function mostrarLista() {
   off(seletor);
   off(cadastro);
   off(remover);
+  let listRem = document.querySelector("#listRem");
+  listRem.innerHTML=""
   on(imagens);
   switch (select) {
     case "filmes":
